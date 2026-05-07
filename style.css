@@ -437,7 +437,7 @@ img {
 .footer-heading {
   color: var(--white);
   font-weight: 600;
-  font-size: 0.88rem;
+  font-size: 1.1em;
   letter-spacing: 0.05em;
   margin-bottom: 6px;
 }
@@ -446,7 +446,7 @@ img {
 .footer-contact span {
   color: rgba(255, 255, 255, 0.48);
   text-decoration: none;
-  font-size: 0.87rem;
+  font-size: 1em;
   transition: color var(--ease);
 }
 
