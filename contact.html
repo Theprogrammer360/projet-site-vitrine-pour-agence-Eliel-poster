@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — ConsultingElite</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar scrolled" id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <span class="logo-main">CONSULTING</span
+          ><span class="logo-accent">ELITE</span>
+        </a>
+        <button class="burger" id="burger" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="index.html#services" class="nav-link">Services</a>
+          <a href="index.html#apropos" class="nav-link">À Propos</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="contact-hero">
+      <div class="contact-hero-inner">
+        <p class="contact-tag">Parlons ensemble</p>
+        <h1>Contactez-<span class="accent">nous</span></h1>
+        <p class="contact-hero-sub">
+          Nous sommes disponibles pour répondre à toutes vos questions et
+          discuter de votre projet.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-main">
+      <div class="container contact-grid">
+        <div class="contact-form-wrap">
+          <h2 class="form-title">Envoyez-nous un message</h2>
+
+          <div class="form-group">
+            <label for="nom">Nom Complet</label>
+            <input type="text" id="nom" placeholder="Ex. samuel ruben" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Professionnel</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="samuelruben224@gmail.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="sujet">Sujet</label>
+            <input
+              type="text"
+              id="sujet"
+              placeholder="Objet de votre message"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Comment pouvons-nous vous aider ?"
+            ></textarea>
+          </div>
+
+          <button class="btn-submit" id="submitBtn" onclick="envoyer()">
+            Envoyer le message
+          </button>
+
+          <div class="form-success" id="successMsg">
+            ✓ Votre message a été envoyé avec succès ! Nous vous répondrons dans
+            les 24h.
+          </div>
+        </div>
+
+        <div class="coordonnees">
+          <h2 class="coord-title">Nos Coordonnées</h2>
+
+          <div class="coord-item">
+            <div class="coord-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+                />
+                <circle cx="12" cy="9" r="2.5" />
+              </svg>
+            </div>
+            <div class="coord-info">
+              <span class="coord-label">Adresse</span>
+              <span class="coord-value">Immeuble N'Zarama, Le Plateau</span>
+            </div>
+          </div>
+
+          <div class="coord-item">
+            <div class="coord-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.07 11.5 19.79 19.79 0 011 2.18 2 2 0 013 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"
+                />
+              </svg>
+            </div>
+            <div class="coord-info">
+              <span class="coord-label">Téléphone</span>
+              <span class="coord-value">+225 07 07 07 07</span>
+            </div>
+          </div>
+
+          <div class="coord-item">
+            <div class="coord-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+            </div>
+            <div class="coord-info">
+              <span class="coord-label">Horaires</span>
+              <span class="coord-value">Lun – Ven : 08:00 – 18:00</span>
+            </div>
+          </div>
+
+          <div class="coord-divider"></div>
+
+          <div class="coord-socials">
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zm2-3a2 2 0 100-4 2 2 0 000 4z"
+                />
+              </svg>
+              LinkedIn
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                />
+              </svg>
+              Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-main">CONSULTING</span
+            ><span class="logo-accent">ELITE</span>
+          </a>
+          <p>
+            Votre partenaire de croissance en Afrique de l'Ouest. Expertise et
+            résultats garantis.
+          </p>
+        </div>
+        <div class="footer-nav">
+          <span class="footer-heading">Navigation</span>
+          <a href="index.html#services">Solutions</a>
+          <a href="#">Mentions Légales</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="footer-contact">
+          <span class="footer-heading">Contact</span>
+          <span>+225 07 07 07 07</span>
+          <span>info@consulting.ci</span>
+          <span>Plateau, Abidjan</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © 2025 ConsultingElite. Tous droits réservés.
+          <span class="sep">|</span>
+          Site développé par
+          <a href="https://elielposter.com/" target="_blank" rel="noopener"
+            >elielposter.com</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      var burger = document.getElementById("burger");
+      var nav = document.getElementById("navLinks");
+
+      burger.addEventListener("click", function () {
+        nav.classList.toggle("open");
+        burger.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-link").forEach(function (link) {
+        link.addEventListener("click", function () {
+          nav.classList.remove("open");
+          burger.classList.remove("active");
+        });
+      });
+
+      function envoyer() {
+        var nom = document.getElementById("nom").value.trim();
+        var email = document.getElementById("email").value.trim();
+        var msg = document.getElementById("message").value.trim();
+
+        if (!nom || !email || !msg) {
+          alert("Veuillez remplir tous les champs obligatoires.");
+          return;
+        }
+
+        var btn = document.getElementById("submitBtn");
+        btn.disabled = true;
+        btn.textContent = "Envoi en cours...";
+
+        setTimeout(function () {
+          document.getElementById("successMsg").style.display = "block";
+          btn.style.display = "none";
+        }, 1200);
+      }
+    </script>
+  </body>
+</html>
